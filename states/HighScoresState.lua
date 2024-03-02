@@ -1,10 +1,18 @@
 HighScoresState = Class{__includes = BaseState}
 
+function HighScoresState:does_file_exist()
+	local f = assert(io.open("scores.txt", "r"))
+end
+
 function HighScoresState:enter()
 
 	Transition("fadeIn")
-	
+	if not pcall(self.does_file_exist) then
+		print("here")
+		self.f = io.open("scores.txt", "w")
+	end
 	self.f = io.open("scores.txt", "r")
+
 	self.highscores = "" 
 	self.highscores = self.f:read("*all")
 
@@ -26,7 +34,6 @@ function HighScoresState:enter()
 	end
 
 	table.sort(self.highscoresTableProcessed, function(i1, i2) return i1.score > i2.score end)
-
 end
 
 function HighScoresState:update()
