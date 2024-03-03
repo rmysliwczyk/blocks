@@ -32,3 +32,4 @@ sudo apt install love
 ## Credits:
 * timer.lua from [Knife](https://github.com/airstruck/knife) ("A collection of useful micro-modules for Lua")
 * class.lua from [hump](https://github.com/vrld/hump) ("LÖVE Helper Utilities for Massive Progression")
+* push.lua from [push](https://github.com/Ulydev/push) ("A simple resolution-handling library for LÖVE")
