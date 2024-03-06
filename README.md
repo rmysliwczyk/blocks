@@ -10,6 +10,10 @@
 This is a recreation of tetris, made with Lua programming language and Love2D which is a free, open-source and multi-platform framework for making 2D games. This game was my final project for [CS50's Introduction to Game Development](https://cs50.harvard.edu/games/2018/).
 
 ## How to run:
+### Windows
+* Download the appropriate release file
+* Unzip the file and run blocks.exe
+
 ### Linux
 * First you must make sure that you have Love2D installed. Love2D is commonly available as part of many distributions repositories. On Debian-based systems you can install it with: 
 ```
